@@ -8,7 +8,7 @@ const ContactSection = () => {
     {
       icon: MessageCircle,
       label: t('contact.whatsapp'),
-      href: "https://wa.me/1234567890", // Replace with actual number
+      href: "https://wa.me/664085328", // Replace with actual number
       description: t('contact.whatsappDesc')
     },
     {
@@ -20,7 +20,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: t('contact.email'),
-      href: "mailto:contact@example.com", // Replace with actual email
+      href: "mailto:Julienmauro12@gmail.com", // Replace with actual email
       description: t('contact.emailDesc')
     }
   ];

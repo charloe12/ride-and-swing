@@ -288,7 +288,7 @@ const BookingSection = () => {
                 type="button"
                 variant="outline"
                 className="w-full h-12 md:h-14 text-base md:text-lg font-bold border-2 hover:bg-foreground/5 gap-2"
-                onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+                onClick={() => window.open('https://wa.me/664085328', '_blank')}
               >
                 <MessageCircle className="w-5 h-5" />
                 {t('booking.whatsapp')}
