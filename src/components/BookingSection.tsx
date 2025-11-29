@@ -90,7 +90,7 @@ const BookingSection = () => {
         package: formData.package,
         dates: formData.dates,
         message: formData.message || "No message provided",
-        to_email: "kamenzouy@outlook.com",
+        to_email: "Julienmauro12@gmail.com",
       };
 
       console.log("Sending email with params:", templateParams);
