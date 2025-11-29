@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 80%;
+    --foreground: 0 0% 10%;
+
+    --card: 210 25% 85%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 210 25% 85%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 20% 75%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 210 15% 70%;
+    --muted-foreground: 0 0% 30%;
+
+    --accent: 64 100% 68%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 70%;
+    --input: 210 20% 75%;
+    --ring: 64 100% 68%;
+
+    --radius: 0.5rem;
+    
+    --neon-yellow: 64 100% 68%;
+    --ocean-mist: 210 20% 80%;
+    --deep-ocean: 210 30% 25%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 30% 15%;
+    --foreground: 210 20% 90%;
+
+    --card: 210 30% 18%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 210 30% 18%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 64 100% 68%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 210 25% 25%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 210 25% 22%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 64 100% 68%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 25% 25%;
+    --input: 210 25% 25%;
+    --ring: 64 100% 68%;
+    --sidebar-background: 210 30% 12%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 64 100% 68%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 210 25% 20%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 210 25% 20%;
+    --sidebar-ring: 64 100% 68%;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Editorial';
+    font-weight: 400 700;
+    font-display: swap;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-neon {
+    color: hsl(var(--neon-yellow));
+  }
+  
+  .bg-ocean-mist {
+    background-color: hsl(var(--ocean-mist));
+  }
+
+  .hero-text {
+    font-size: clamp(3rem, 15vw, 18rem);
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-text {
+      font-size: clamp(6rem, 20vw, 18rem);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
