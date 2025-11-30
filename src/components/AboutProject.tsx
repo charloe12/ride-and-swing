@@ -8,10 +8,13 @@ const AboutProject = () => {
   return (
     <section id="services" className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-24 md:pt-32">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${waveImage})` }}
-      >
+      <div className="absolute inset-0">
+        <img
+          src={waveImage}
+          alt="Ocean Wave"
+          className="w-full h-full object-cover object-center"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-background/40" />
       </div>
 

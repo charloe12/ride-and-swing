@@ -18,10 +18,14 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Surfing in Taghazout"
+          className="w-full h-full object-cover object-center"
+          fetchPriority="high"
+          loading="eager"
+        />
         <div className="absolute inset-0 bg-background/40" />
       </div>
 

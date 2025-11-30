@@ -9,22 +9,24 @@ const AboutJulian = () => {
   return (
     <section id="about" className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-24 md:pt-32">
       {/* Background Image - Mobile */}
-      <div
-        className="absolute inset-0 bg-cover bg-bottom md:hidden"
-        style={{
-          backgroundImage: `url(${julianImage})`,
-        }}
-      >
+      <div className="absolute inset-0 md:hidden">
+        <img
+          src={julianImage}
+          alt="Julian Portrait"
+          className="w-full h-full object-cover object-bottom"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/30 to-background/10" />
       </div>
 
       {/* Background Image - Desktop */}
-      <div
-        className="hidden md:block absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${julianDesktopImage})`,
-        }}
-      >
+      <div className="hidden md:block absolute inset-0">
+        <img
+          src={julianDesktopImage}
+          alt="Julian Coaching"
+          className="w-full h-full object-cover object-center"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/30 to-background/10" />
       </div>
 

@@ -18,11 +18,15 @@ const GolfHero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center md:bg-[center_20%]"
-        style={{ backgroundImage: `url(${golfImage})` }}
-      >
-        <div className="absolute inset-0 bg-background/20" />
+      <div className="absolute inset-0">
+        <img
+          src={golfImage}
+          alt="Golfing in Taghazout"
+          className="w-full h-full object-cover object-center"
+          fetchPriority="high"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-background/40" />
       </div>
 
       {/* Hero Text */}

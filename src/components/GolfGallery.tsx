@@ -42,6 +42,9 @@ const GolfGallery = () => {
               src={image.src}
               alt={image.alt}
               className="w-full h-full object-cover"
+              loading="lazy"
+              width={96}
+              height={64}
             />
           </button>
         ))}
