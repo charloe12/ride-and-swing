@@ -7,7 +7,7 @@ const AboutJulian = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
+    <section id="about" className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-24 md:pt-32">
       {/* Background Image - Mobile */}
       <div
         className="absolute inset-0 bg-cover bg-bottom md:hidden"
@@ -29,7 +29,7 @@ const AboutJulian = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 animate-fade-in max-w-5xl mb-32 md:mb-48">
+      <div className="relative z-10 text-center px-4 animate-fade-in max-w-5xl">
         <p className="text-foreground/80 text-xs md:text-sm uppercase tracking-widest mb-4 font-bold drop-shadow-md">
           {t('julian.title')}
         </p>
