@@ -16,7 +16,7 @@ const GolfHero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
+    <section className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-32 md:pt-48">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img

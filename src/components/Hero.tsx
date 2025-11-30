@@ -16,7 +16,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
+    <section className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-32 md:pt-48">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Text */}
-      <div className="relative z-10 text-center px-4 animate-fade-in mb-32 md:mb-48">
+      <div className="relative z-10 text-center px-4 animate-fade-in">
         <h1 className="hero-text text-neon mb-0 select-none leading-[0.75] drop-shadow-lg">
           {t('hero.surfing')}
         </h1>
