@@ -15,7 +15,7 @@ const AboutProject = () => {
         <div className="absolute inset-0 bg-background/40" />
       </div>
 
-      {/* Content */}
+      {/* Header Content - Top */}
       <div className="relative z-10 text-center px-4 animate-fade-in max-w-4xl">
         <h2 className="hero-text text-neon mb-0 select-none leading-[0.75] drop-shadow-lg">
           {t('vision.title')}
@@ -23,7 +23,11 @@ const AboutProject = () => {
         <p className="text-foreground text-sm md:text-2xl italic mt-2 md:mt-4 tracking-wide drop-shadow-md font-medium">
           {t('vision.subtitle')}
         </p>
-        <p className="text-foreground/80 text-xs md:text-base mt-6 md:mt-8 max-w-2xl mx-auto leading-relaxed">
+      </div>
+
+      {/* Description - Center */}
+      <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 max-w-2xl w-full" style={{ animationDelay: "0.2s" }}>
+        <p className="text-foreground/80 text-xs md:text-base leading-relaxed text-center animate-fade-in">
           <span style={{
             backgroundColor: 'hsl(64, 100%, 68%)',
             color: 'black',
