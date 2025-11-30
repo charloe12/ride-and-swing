@@ -6,7 +6,7 @@ const AboutProject = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
+    <section id="services" className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-24 md:pt-32">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -16,7 +16,7 @@ const AboutProject = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 animate-fade-in max-w-4xl mb-32 md:mb-48">
+      <div className="relative z-10 text-center px-4 animate-fade-in max-w-4xl">
         <h2 className="hero-text text-neon mb-0 select-none leading-[0.75] drop-shadow-lg">
           {t('vision.title')}
         </h2>
