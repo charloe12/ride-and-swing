@@ -42,8 +42,8 @@ const AboutJulian = () => {
       </div>
 
       {/* Description - Center */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 animate-fade-in max-w-3xl w-full">
-        <p className="text-foreground/90 text-sm md:text-lg leading-relaxed text-center">
+      <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 max-w-3xl w-full" style={{ animationDelay: "0.2s" }}>
+        <p className="text-foreground/90 text-sm md:text-lg leading-relaxed text-center animate-fade-in">
           <span style={{
             backgroundColor: 'hsl(64, 100%, 68%)',
             color: 'black',
