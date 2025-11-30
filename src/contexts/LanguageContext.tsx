@@ -15,7 +15,7 @@ const translations = {
     // Header
     'nav.services': 'Services',
     'nav.about': 'About Us',
-    'nav.contacts': 'Contacts',
+    'nav.contacts': 'Contact',
 
     // Hero
     'hero.surfing': 'SURFING',
@@ -101,7 +101,7 @@ const translations = {
     // Header
     'nav.services': 'Services',
     'nav.about': 'À Propos',
-    'nav.contacts': 'Contacts',
+    'nav.contacts': 'Contact',
 
     // Hero
     'hero.surfing': 'SURF',
