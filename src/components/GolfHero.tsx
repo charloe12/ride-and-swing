@@ -22,7 +22,7 @@ const GolfHero = () => {
         <img
           src={golfImage}
           alt="Golfing in Taghazout"
-          className="w-full h-full object-cover object-center md:object-top"
+          className="w-full h-full object-cover object-center md:object-[center_20%]"
           fetchPriority="high"
           loading="eager"
         />
