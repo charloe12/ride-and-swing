@@ -36,7 +36,7 @@ const translations = {
     'julian.title': 'MEET JULIEN',
     'julian.subtitle': '(YOUR GUIDE TO EXCELLENCE)',
     'julian.intro': 'Professional Surfer & Founder',
-    'julian.description': 'From Riding world-class waves to offering premium golf lessons and creating unforgettable experiences, Julian brings decades of passion and expertise to every adventure. His vision merges the thrill of the ocean with a refined luxury lifestyle.',
+    'julian.description': 'From Riding world-class waves to offering premium golf lessons and creating unforgettable experiences, Julien brings decades of passion and expertise to every adventure. His vision merges the thrill of the ocean with a refined luxury lifestyle.',
     'julian.learnMore': 'MEET JULIEN',
 
     // Golf
@@ -120,7 +120,7 @@ const translations = {
     'julian.title': 'RENCONTREZ JULIEN',
     'julian.subtitle': '(VOTRE GUIDE VERS L\'EXCELLENCE)',
     'julian.intro': 'Surfeur Professionnel & Fondateur',
-    'julian.description': 'De la pratique de vagues de classe mondiale à l\'offre de leçons de golf premium et à la création d\'expériences inoubliables, Julian apporte des décennies de passion et d\'expertise à chaque aventure. Sa vision fusionne le frisson de l\'océan avec un style de vie luxueux et raffiné.',
+    'julian.description': 'De la pratique de vagues de classe mondiale à l\'offre de leçons de golf premium et à la création d\'expériences inoubliables, Julien apporte des décennies de passion et d\'expertise à chaque aventure. Sa vision fusionne le frisson de l\'océan avec un style de vie luxueux et raffiné.',
     'julian.learnMore': 'RENCONTRER JULIEN',
 
     // Golf
