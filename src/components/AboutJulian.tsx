@@ -9,7 +9,7 @@ const AboutJulian = () => {
     <section id="about" className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-bottom md:bg-[center_95%]"
+        className="absolute inset-0 bg-cover bg-bottom md:bg-[center_5%]"
         style={{
           backgroundImage: `url(${julianImage})`,
         }}
