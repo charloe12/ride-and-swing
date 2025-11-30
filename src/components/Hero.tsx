@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/image00017.jpeg";
+import heroImage from "@/assets/image00017.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {

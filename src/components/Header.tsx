@@ -2,7 +2,7 @@ import { Search, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {

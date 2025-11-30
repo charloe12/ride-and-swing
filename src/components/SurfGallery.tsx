@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import surfGallery1 from "@/assets/image00028.jpeg";
-import surfGallery2 from "@/assets/image00013.jpeg";
-import surfGallery3 from "@/assets/image00016.jpeg";
-import surfGallery4 from "@/assets/image00009.jpeg";
-import surfGallery5 from "@/assets/image00007.jpeg";
-import surfGallery6 from "@/assets/surf-gallery-6.jpg";
-import surfGallery7 from "@/assets/surf-gallery-7.jpg";
+import surfGallery1 from "@/assets/image00028.webp";
+import surfGallery2 from "@/assets/image00013.webp";
+import surfGallery3 from "@/assets/image00016.webp";
+import surfGallery4 from "@/assets/image00009.webp";
+import surfGallery5 from "@/assets/image00007.webp";
+import surfGallery6 from "@/assets/surf-gallery-6.webp";
+import surfGallery7 from "@/assets/surf-gallery-7.webp";
 
 const SurfGallery = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import golfGallery1 from "@/assets/golf-gallery-1.jpeg";
-import golfGallery2 from "@/assets/golf-gallery-2.jpeg";
-import golfGallery3 from "@/assets/golf-gallery-3.jpeg";
-import golfGallery4 from "@/assets/golf-gallery-4.jpeg";
-import golfGallery5 from "@/assets/golf-gallery-5.jpeg";
+import golfGallery1 from "@/assets/golf-gallery-1.webp";
+import golfGallery2 from "@/assets/golf-gallery-2.webp";
+import golfGallery3 from "@/assets/golf-gallery-3.webp";
+import golfGallery4 from "@/assets/golf-gallery-4.webp";
+import golfGallery5 from "@/assets/golf-gallery-5.webp";
 
 const GolfGallery = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);

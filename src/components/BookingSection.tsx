@@ -9,7 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import taghazoutBeach from "@/assets/taghazout-beach.jpg";
+import taghazoutBeach from "@/assets/taghazout-beach.webp";
 import { MapPin, Palmtree, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "sonner";

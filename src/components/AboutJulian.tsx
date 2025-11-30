@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import julianImage from "@/assets/julian-portrait.jpeg";
-import julianDesktopImage from "@/assets/julian-desktop.jpg";
+import julianImage from "@/assets/julian-portrait.webp";
+import julianDesktopImage from "@/assets/julian-desktop.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutJulian = () => {

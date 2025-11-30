@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import waveImage from "@/assets/image00025.jpeg";
+import waveImage from "@/assets/image00025.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutProject = () => {
