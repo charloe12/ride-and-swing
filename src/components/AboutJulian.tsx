@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import julianImage from "@/assets/julian-portrait.jpg";
+import julianImage from "@/assets/julian-portrait.jpeg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutJulian = () => {
@@ -9,10 +9,9 @@ const AboutJulian = () => {
     <section id="about" className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover md:bg-center"
+        className="absolute inset-0 bg-cover bg-bottom md:bg-top"
         style={{
           backgroundImage: `url(${julianImage})`,
-          backgroundPosition: window.innerWidth < 768 ? '75% center' : 'center'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/30 to-background/10" />
@@ -88,7 +87,7 @@ const AboutJulian = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
