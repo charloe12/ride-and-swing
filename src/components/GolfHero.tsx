@@ -33,7 +33,7 @@ const GolfHero = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden snap-start snap-always">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-500"
+        className="absolute inset-0 bg-cover bg-center md:bg-top transition-all duration-500"
         style={{ backgroundImage: `url(${images[selectedIndex].src})` }}
       >
         <div className="absolute inset-0 bg-background/40" />

@@ -2,7 +2,7 @@ import { Search, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logo1.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-[100] px-4 py-3 md:px-12 md:py-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-12 w-12 md:h-16 md:w-16" />
+          <img src={logo} alt="Logo" className="h-16 w-16 md:h-20 md:w-20" />
         </div>
 
         {/* Desktop Navigation */}
