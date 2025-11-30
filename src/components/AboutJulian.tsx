@@ -28,7 +28,7 @@ const AboutJulian = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/30 to-background/10" />
       </div>
 
-      {/* Content */}
+      {/* Header Content - Top */}
       <div className="relative z-10 text-center px-4 animate-fade-in max-w-5xl">
         <p className="text-foreground/80 text-xs md:text-sm uppercase tracking-widest mb-4 font-bold drop-shadow-md">
           {t('julian.title')}
@@ -39,7 +39,11 @@ const AboutJulian = () => {
         <p className="text-foreground text-base md:text-3xl italic mt-3 md:mt-6 tracking-wide font-light drop-shadow-md">
           {t('julian.intro')}
         </p>
-        <p className="text-foreground/90 text-sm md:text-lg mt-8 md:mt-12 max-w-3xl mx-auto leading-relaxed text-center">
+      </div>
+
+      {/* Description - Center */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 animate-fade-in max-w-3xl w-full">
+        <p className="text-foreground/90 text-sm md:text-lg leading-relaxed text-center">
           <span style={{
             backgroundColor: 'hsl(64, 100%, 68%)',
             color: 'black',
