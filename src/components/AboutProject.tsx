@@ -17,7 +17,7 @@ const AboutProject = () => {
 
       {/* Header Content - Top */}
       <div className="relative z-10 text-center px-4 animate-fade-in max-w-4xl">
-        <h2 className="hero-text text-neon mb-0 select-none leading-[0.75] drop-shadow-lg">
+        <h2 className="text-[clamp(3rem,15vw,10rem)] md:text-[clamp(6rem,15vw,10rem)] text-neon mb-0 select-none leading-[0.75] drop-shadow-lg font-normal uppercase tracking-tight">
           {t('vision.title')}
         </h2>
         <p className="text-foreground text-sm md:text-2xl italic mt-2 md:mt-4 tracking-wide drop-shadow-md font-medium">
