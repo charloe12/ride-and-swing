@@ -76,8 +76,8 @@ const GolfHero = () => {
         <ChevronRight className="w-6 h-6" />
       </button>
 
-      {/* Hero Text - Top Right on Mobile, Center on Desktop */}
-      <div className="absolute top-32 right-4 md:relative md:top-0 md:right-0 z-10 text-right md:text-center px-4 animate-fade-in md:mb-32">
+      {/* Hero Text - Top Right */}
+      <div className="absolute top-32 right-4 md:right-12 text-right z-10 animate-fade-in">
         <h2 className="hero-text text-neon mb-0 select-none leading-[0.75]">
           {t('golf.title')}
         </h2>
@@ -86,52 +86,24 @@ const GolfHero = () => {
         </p>
       </div>
 
-      {/* CTA Button */}
-      <div className="absolute bottom-28 md:bottom-44 left-1/2 -translate-x-1/2 z-30 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-        <Button variant="hero" size="lg" className="rounded-full px-8 py-4 md:px-12 md:py-6 text-sm md:text-base font-medium">
-          BOOK NOW
-        </Button>
+      {/* Description - Bottom Right with Yellow Background */}
+      <div className="absolute bottom-16 md:bottom-32 left-4 right-4 md:left-auto md:right-12 z-30 animate-fade-in max-w-full md:max-w-md" style={{ animationDelay: "0.3s" }}>
+        <p className="text-foreground text-xs md:text-sm leading-relaxed">
+          <span style={{
+            backgroundColor: 'hsl(64, 100%, 68%)',
+            color: 'black',
+            padding: '6px 12px',
+            boxDecorationBreak: 'clone',
+            WebkitBoxDecorationBreak: 'clone'
+          }}>
+            {t('golf.description')}
+          </span>
+        </p>
       </div>
 
 
 
-      {/* Bottom Info */}
-      <div className="absolute bottom-4 md:bottom-8 left-0 right-0 px-4 md:px-12 z-20 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-        {/* Golf Icon - Hidden on mobile */}
-        <div className="hidden md:flex items-center gap-2">
-          <svg className="w-12 h-12 text-foreground/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M12 18v-5m0 0V4l8 4-8 4z" />
-            <circle cx="12" cy="20" r="2" />
-          </svg>
-        </div>
 
-        {/* Location & Time Info */}
-        <div className="flex flex-col md:flex-row items-start md:items-end gap-3 md:gap-6 text-xs text-foreground/80 md:ml-auto">
-          <div className="flex items-start gap-2">
-            <svg className="w-4 h-4 md:w-5 md:h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-            </svg>
-            <div>
-              <div className="font-medium text-xs md:text-sm">+18°C / +12°C</div>
-              <div className="text-foreground/60 text-[10px] md:text-xs">Scottish Highlands</div>
-              <div className="text-foreground/60 text-[10px] md:text-xs hidden md:block">56.4907° N / 4.2026° W</div>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-2">
-            <svg className="w-4 h-4 md:w-5 md:h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            <div>
-              <div className="font-medium text-xs md:text-sm">GMT +1</div>
-              <div className="text-foreground/60 text-[10px] md:text-xs">10:30:15 AM</div>
-              <div className="text-foreground/60 text-[10px] md:text-xs hidden md:block">Date: August 10, 2024</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

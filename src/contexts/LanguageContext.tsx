@@ -21,11 +21,12 @@ const translations = {
     'hero.surfing': 'SURFING',
     'hero.subtitle': '(TAGHAZOUT SURF LESSONS)',
     'hero.bookNow': 'BOOK NOW',
+    'hero.description': 'Choose from our surf packages: Group Sessions, Private Coaching, or Premium Surf & Picnic Experience. Expert instruction from beginner to advanced levels. All equipment included. Perfect waves in Taghazout await! Scroll down to book your unforgettable surf adventure.',
 
     // About Project
     'vision.title': 'THE VISION',
     'vision.subtitle': '(SURF & GOLF IN TAGHAZOUT)',
-    'vision.description': 'Merging the thrill of world-class waves in Taghazout with luxury leisure activities, including premium golf lessons. A curated lifestyle destination where adventure meets elegance.',
+    'vision.description': 'Merging the thrill of world-class waves in Taghazout with luxury leisure activities, including premium golf lessons. Authentic lifestyle destination where adventure meets elegance.',
     'vision.discover': 'DISCOVER MORE',
     'vision.global': 'Global Destinations',
     'vision.premium': 'Premium Locations Worldwide',
@@ -35,13 +36,14 @@ const translations = {
     // About Julian
     'julian.title': 'MEET JULIEN',
     'julian.subtitle': '(YOUR GUIDE TO EXCELLENCE)',
-    'julian.intro': 'Professional Surfer & Founder',
+    'julian.intro': 'Professional Surfer & Golfer',
     'julian.description': 'From Riding world-class waves to offering premium golf lessons and creating unforgettable experiences, Julien brings decades of passion and expertise to every adventure. His vision merges the thrill of the ocean with a refined luxury lifestyle.',
     'julian.learnMore': 'MEET JULIEN',
 
     // Golf
     'golf.title': 'GOLFING',
     'golf.subtitle': '(TAGHAZOUT BAY GOLF)',
+    'golf.description': 'Choose from our golf packages: Practice Range Sessions, 9-Hole Course Guiding, or 18-Hole Championship Experience. Expert coaching for all skill levels. Premium equipment available. Stunning courses in Morocco await! Scroll down to book your perfect golf getaway.',
 
     // Booking
     'booking.title': 'BOOK YOUR LESSONS',
@@ -105,11 +107,12 @@ const translations = {
     'hero.surfing': 'SURF',
     'hero.subtitle': '(LEÇONS DE SURF TAGHAZOUT)',
     'hero.bookNow': 'RÉSERVER',
+    'hero.description': 'Choisissez parmi nos forfaits de surf : Sessions de Groupe, Coaching Privé ou Expérience Premium Surf & Pique-nique. Enseignement expert du niveau débutant au niveau avancé. Tout l\'équipement inclus. Les vagues parfaites de Taghazout vous attendent ! Faites défiler vers le bas pour réserver votre aventure de surf inoubliable.',
 
     // About Project
     'vision.title': 'LA VISION',
     'vision.subtitle': '(SURF & GOLF À TAGHAZOUT)',
-    'vision.description': 'Fusionner le frisson des vagues de classe mondiale à Taghazout avec des activités de loisirs de luxe, y compris des leçons de golf premium. Une destination lifestyle où l\'aventure rencontre l\'élégance.',
+    'vision.description': 'Fusionner le frisson des vagues de classe mondiale à Taghazout avec des activités de loisirs de luxe, y compris des leçons de golf premium. Authentic lifestyle où l\'aventure rencontre l\'élégance.',
     'vision.discover': 'DÉCOUVRIR PLUS',
     'vision.global': 'Destinations Mondiales',
     'vision.premium': 'Emplacements Premium Mondiaux',
@@ -119,13 +122,14 @@ const translations = {
     // About Julian
     'julian.title': 'RENCONTREZ JULIEN',
     'julian.subtitle': '(VOTRE GUIDE VERS L\'EXCELLENCE)',
-    'julian.intro': 'Surfeur Professionnel & Fondateur',
+    'julian.intro': 'Surfeur Professionnel & Golfeur',
     'julian.description': 'De la pratique de vagues de classe mondiale à l\'offre de leçons de golf premium et à la création d\'expériences inoubliables, Julien apporte des décennies de passion et d\'expertise à chaque aventure. Sa vision fusionne le frisson de l\'océan avec un style de vie luxueux et raffiné.',
     'julian.learnMore': 'RENCONTRER JULIEN',
 
     // Golf
     'golf.title': 'GOLF',
     'golf.subtitle': '(GOLF DE TAGHAZOUT BAY)',
+    'golf.description': 'Choisissez parmi nos forfaits de golf : Sessions Practice Range, Accompagnement 9 Trous ou Expérience Championship 18 Trous. Coaching expert pour tous les niveaux. Équipement premium disponible. De magnifiques parcours au Maroc vous attendent ! Faites défiler vers le bas pour réserver votre escapade golf parfaite.',
 
     // Booking
     'booking.title': 'RÉSERVEZ VOS LEÇONS',
@@ -145,17 +149,17 @@ const translations = {
     'booking.surfPicknik': 'Journée Pick-nik/Surf - 1000 dhs/par personne',
 
     // Golf Packages
-    'booking.golfPractice': 'Pratique - 500 dhs par personne',
-    'booking.golfGuiding9': 'Guidage (9 trous) - 1400 dhs (tout inclus)',
-    'booking.golfGuiding18': 'Guidage (18 trous) - 1800 dhs (tout inclus)',
+    'booking.golfPractice': 'Practice - 500 dhs par personne',
+    'booking.golfGuiding9': 'Accompagnement (9 trous) - 1400 dhs (tout inclus)',
+    'booking.golfGuiding18': 'Accompagnement (18 trous) - 1800 dhs (tout inclus)',
 
     // Combo Packages
     'booking.comboSurfPractice': '1 Session Surf + 1 Pratique Golf - 800 dhs',
-    'booking.comboSurfGuiding9': '1 Session Surf + 1 Guidage de Parcours (9 trous) - 1750 dhs',
-    'booking.comboSurfGuiding18': '1 Session Surf + 1 Guidage de Parcours (18 trous) - 2150 dhs',
+    'booking.comboSurfGuiding9': '1 Session Surf + 1 accompagnement (9 trous) - 1750 dhs',
+    'booking.comboSurfGuiding18': '1 Session Surf + 1 accompagnement (18 trous) - 2150 dhs',
     'booking.comboPicknikPractice': '1 Pick-nik Surf + 1 Pratique Golf - 1450 dhs',
-    'booking.comboPicknikGuiding9': '1 Pick-nik Surf + 1 Guidage de Parcours (9 trous) - 2350 dhs',
-    'booking.comboPicknikGuiding18': '1 Pick-nik Surf + 1 Guidage de Parcours (18 trous) - 2700 dhs',
+    'booking.comboPicknikGuiding9': '1 Pick-nik Surf + 1 accompagnement (9 trous) - 2350 dhs',
+    'booking.comboPicknikGuiding18': '1 Pick-nik Surf + 1 accompagnement (18 trous) - 2700 dhs',
 
     'booking.name': 'NOM COMPLET',
     'booking.email': 'EMAIL',
