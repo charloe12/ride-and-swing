@@ -89,17 +89,11 @@ const Hero = () => {
 
       {/* Description - Bottom Right with Yellow Background */}
       <div className="absolute bottom-16 md:bottom-32 left-4 right-4 md:left-auto md:right-12 z-30 animate-fade-in max-w-full md:max-w-md" style={{ animationDelay: "0.3s" }}>
-        <p className="text-foreground text-xs md:text-sm leading-relaxed">
-          <span style={{
-            backgroundColor: 'hsl(64, 100%, 68%)',
-            color: 'black',
-            padding: '6px 12px',
-            boxDecorationBreak: 'clone',
-            WebkitBoxDecorationBreak: 'clone'
-          }}>
+        <div className="bg-[hsl(64,100%,68%)] text-black px-6 py-4 rounded">
+          <p className="text-xs md:text-sm leading-relaxed">
             {t('hero.description')}
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
 
 

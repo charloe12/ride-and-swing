@@ -38,24 +38,18 @@ const AboutJulian = () => {
         <h2 className="hero-text text-neon mb-0 select-none leading-[0.75] drop-shadow-lg">
           JULIEN
         </h2>
-        <p className="text-foreground text-base md:text-3xl italic mt-3 md:mt-6 tracking-wide font-light drop-shadow-md">
+        <p className="text-foreground text-base md:text-3xl italic mt-3 md:mt-6 tracking-wide font-light" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6)' }}>
           {t('julian.intro')}
         </p>
       </div>
 
       {/* Description - Center */}
       <div className="absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 max-w-3xl w-full" style={{ animationDelay: "0.2s" }}>
-        <p className="text-foreground/90 text-sm md:text-lg leading-relaxed text-center animate-fade-in">
-          <span style={{
-            backgroundColor: 'hsl(64, 100%, 68%)',
-            color: 'black',
-            padding: '6px 12px',
-            boxDecorationBreak: 'clone',
-            WebkitBoxDecorationBreak: 'clone'
-          }}>
+        <div className="bg-[hsl(64,100%,68%)] text-black px-6 py-4 rounded animate-fade-in">
+          <p className="text-sm md:text-lg leading-relaxed text-center">
             {t('julian.description')}
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
 
       {/* CTA Button */}
@@ -90,16 +84,6 @@ const AboutJulian = () => {
             <div>
               <div className="font-medium text-xs md:text-sm">20+ Years</div>
               <div className="text-foreground/60 text-[10px] md:text-xs">Professional Experience</div>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-2">
-            <svg className="w-4 h-4 md:w-5 md:h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <div>
-              <div className="font-medium text-xs md:text-sm">World Class</div>
-              <div className="text-foreground/60 text-[10px] md:text-xs">Championship Surfer</div>
             </div>
           </div>
         </div>

@@ -19,13 +19,13 @@ const translations = {
 
     // Hero
     'hero.surfing': 'SURFING',
-    'hero.subtitle': '(TAGHAZOUT SURF LESSONS)',
+    'hero.subtitle': 'TAGHAZOUT SURF LESSONS',
     'hero.bookNow': 'BOOK NOW',
     'hero.description': 'Choose from our surf packages: Group Sessions, Private Coaching, or Premium Surf & Picnic Experience. Expert instruction from beginner to advanced levels. All equipment included. Perfect waves in Taghazout await! Scroll down to book your unforgettable surf adventure.',
 
     // About Project
     'vision.title': 'THE VISION',
-    'vision.subtitle': '(SURF & GOLF IN TAGHAZOUT)',
+    'vision.subtitle': 'SURF & GOLF IN TAGHAZOUT',
     'vision.description': 'Merging the thrill of world-class waves in Taghazout with luxury leisure activities, including premium golf lessons. Authentic lifestyle destination where adventure meets elegance.',
     'vision.discover': 'DISCOVER MORE',
     'vision.global': 'Global Destinations',
@@ -35,14 +35,14 @@ const translations = {
 
     // About Julian
     'julian.title': 'MEET JULIEN',
-    'julian.subtitle': '(YOUR GUIDE TO EXCELLENCE)',
+    'julian.subtitle': 'YOUR GUIDE TO EXCELLENCE',
     'julian.intro': 'Professional Surfer & Golfer',
     'julian.description': 'From Riding world-class waves to offering premium golf lessons and creating unforgettable experiences, Julien brings decades of passion and expertise to every adventure. His vision merges the thrill of the ocean with a refined luxury lifestyle.',
     'julian.learnMore': 'MEET JULIEN',
 
     // Golf
     'golf.title': 'GOLFING',
-    'golf.subtitle': '(TAGHAZOUT BAY GOLF)',
+    'golf.subtitle': 'TAGHAZOUT BAY GOLF',
     'golf.description': 'Choose from our golf packages: Practice Range Sessions, 9-Hole Course Guiding, or 18-Hole Championship Experience. Expert coaching for all skill levels. Premium equipment available. Stunning courses in Morocco await! Scroll down to book your perfect golf getaway.',
 
     // Booking
@@ -105,13 +105,13 @@ const translations = {
 
     // Hero
     'hero.surfing': 'SURF',
-    'hero.subtitle': '(LEÇONS DE SURF TAGHAZOUT)',
+    'hero.subtitle': 'LEÇONS DE SURF TAGHAZOUT',
     'hero.bookNow': 'RÉSERVER',
     'hero.description': 'Choisissez parmi nos forfaits de surf : Sessions de Groupe, Coaching Privé ou Expérience Premium Surf & Pique-nique. Enseignement expert du niveau débutant au niveau avancé. Tout l\'équipement inclus. Les vagues parfaites de Taghazout vous attendent ! Faites défiler vers le bas pour réserver votre aventure de surf inoubliable.',
 
     // About Project
     'vision.title': 'LA VISION',
-    'vision.subtitle': '(SURF & GOLF À TAGHAZOUT)',
+    'vision.subtitle': 'SURF & GOLF À TAGHAZOUT',
     'vision.description': 'Fusionner le frisson des vagues de classe mondiale à Taghazout avec des activités de loisirs de luxe, y compris des leçons de golf premium. Authentic lifestyle où l\'aventure rencontre l\'élégance.',
     'vision.discover': 'DÉCOUVRIR PLUS',
     'vision.global': 'Destinations Mondiales',
@@ -121,14 +121,14 @@ const translations = {
 
     // About Julian
     'julian.title': 'RENCONTREZ JULIEN',
-    'julian.subtitle': '(VOTRE GUIDE VERS L\'EXCELLENCE)',
+    'julian.subtitle': 'VOTRE GUIDE VERS L\'EXCELLENCE',
     'julian.intro': 'Surfeur Professionnel & Golfeur',
     'julian.description': 'De la pratique de vagues de classe mondiale à l\'offre de leçons de golf premium et à la création d\'expériences inoubliables, Julien apporte des décennies de passion et d\'expertise à chaque aventure. Sa vision fusionne le frisson de l\'océan avec un style de vie luxueux et raffiné.',
     'julian.learnMore': 'RENCONTRER JULIEN',
 
     // Golf
     'golf.title': 'GOLF',
-    'golf.subtitle': '(GOLF DE TAGHAZOUT BAY)',
+    'golf.subtitle': 'GOLF DE TAGHAZOUT BAY',
     'golf.description': 'Choisissez parmi nos forfaits de golf : Sessions Practice Range, Accompagnement 9 Trous ou Expérience Championship 18 Trous. Coaching expert pour tous les niveaux. Équipement premium disponible. De magnifiques parcours au Maroc vous attendent ! Faites défiler vers le bas pour réserver votre escapade golf parfaite.',
 
     // Booking

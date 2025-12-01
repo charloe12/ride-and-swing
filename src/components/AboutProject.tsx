@@ -30,18 +30,11 @@ const AboutProject = () => {
 
       {/* Description - Center */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 max-w-2xl w-full" style={{ animationDelay: "0.2s" }}>
-        <p className="text-foreground/80 text-xs md:text-base leading-relaxed text-center animate-fade-in">
-          <span style={{
-            backgroundColor: 'hsl(64, 100%, 68%)',
-            color: 'black',
-            padding: '6px 12px',
-            boxDecorationBreak: 'clone',
-            WebkitBoxDecorationBreak: 'clone'
-          }}>
+        <div className="bg-[hsl(64,100%,68%)] text-black px-6 py-4 rounded animate-fade-in">
+          <p className="text-xs md:text-base leading-relaxed text-center">
             {t('vision.description')}
-
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
 
       {/* CTA Button */}
