@@ -35,12 +35,12 @@ const AboutJulian = () => {
         <p className="text-foreground/80 text-xs md:text-sm uppercase tracking-widest mb-4 font-bold drop-shadow-md">
           {t('julian.title')}
         </p>
+        <p className="text-foreground text-base md:text-3xl italic mb-3 md:mb-6 tracking-wide font-light" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6)' }}>
+          {t('julian.intro')}
+        </p>
         <h2 className="hero-text text-neon mb-0 select-none leading-[0.75] drop-shadow-lg">
           JULIEN
         </h2>
-        <p className="text-foreground text-base md:text-3xl italic mt-3 md:mt-6 tracking-wide font-light" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6)' }}>
-          {t('julian.intro')}
-        </p>
       </div>
 
       {/* Description - Center */}
