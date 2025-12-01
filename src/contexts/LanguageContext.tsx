@@ -154,10 +154,10 @@ const translations = {
     'booking.golfGuiding18': 'Accompagnement (18 trous) - 1800 dhs (tout inclus)',
 
     // Combo Packages
-    'booking.comboSurfPractice': '1 Session Surf + 1 Pratique Golf - 800 dhs',
+    'booking.comboSurfPractice': '1 Session Surf + 1 Practice Golf - 800 dhs',
     'booking.comboSurfGuiding9': '1 Session Surf + 1 accompagnement (9 trous) - 1750 dhs',
     'booking.comboSurfGuiding18': '1 Session Surf + 1 accompagnement (18 trous) - 2150 dhs',
-    'booking.comboPicknikPractice': '1 Pick-nik Surf + 1 Pratique Golf - 1450 dhs',
+    'booking.comboPicknikPractice': '1 Pick-nik Surf + 1 Practice Golf - 1450 dhs',
     'booking.comboPicknikGuiding9': '1 Pick-nik Surf + 1 accompagnement (9 trous) - 2350 dhs',
     'booking.comboPicknikGuiding18': '1 Pick-nik Surf + 1 accompagnement (18 trous) - 2700 dhs',
 

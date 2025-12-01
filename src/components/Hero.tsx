@@ -78,7 +78,7 @@ const Hero = () => {
       </button>
 
       {/* Hero Text - Top Right */}
-      <div className="absolute top-32 right-4 md:right-12 text-right z-10 animate-fade-in">
+      <div className="absolute top-32 right-16 md:right-32 text-right z-10 animate-fade-in">
         <h1 className="hero-text text-neon mb-0 select-none leading-[0.75]">
           {t('hero.surfing')}
         </h1>
