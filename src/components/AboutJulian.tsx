@@ -7,7 +7,7 @@ const AboutJulian = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-16 md:pt-32">
+    <section id="about" className="relative h-screen flex items-start justify-center overflow-hidden snap-start snap-always pt-20 md:pt-40">
       {/* Background Image - Mobile */}
       <div className="absolute inset-0 md:hidden">
         <img
@@ -32,15 +32,12 @@ const AboutJulian = () => {
 
       {/* Header Content - Top */}
       <div className="relative z-10 text-center px-4 animate-fade-in max-w-5xl">
-        <p className="text-foreground/80 text-xs md:text-sm uppercase tracking-widest mb-4 font-bold drop-shadow-md">
-          {t('julian.title')}
-        </p>
-        <p className="text-foreground text-base md:text-3xl italic mb-3 md:mb-6 tracking-wide font-light" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6)' }}>
+        <h2 className="text-[clamp(3rem,15vw,10rem)] md:text-[clamp(4rem,12vw,12rem)] text-neon mb-3 md:mb-6 select-none leading-[0.75] drop-shadow-lg font-normal uppercase tracking-tight">
+          MEET JULIEN
+        </h2>
+        <p className="text-foreground text-base md:text-3xl italic tracking-wide font-light" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6)' }}>
           {t('julian.intro')}
         </p>
-        <h2 className="hero-text text-neon mb-0 select-none leading-[0.75] drop-shadow-lg">
-          JULIEN
-        </h2>
       </div>
 
       {/* Description - Center */}
