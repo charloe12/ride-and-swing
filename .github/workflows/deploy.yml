@@ -35,6 +35,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy additional files to dist
+        run: |
+          cp public/404.html dist/404.html
+          cp public/.nojekyll dist/.nojekyll
+          ls -la dist/ | grep -E "(404|nojekyll|index)"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
@@ -42,6 +48,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
+          # Ensure dot files are included
+          retention-days: 1
 
   deploy:
     environment:
