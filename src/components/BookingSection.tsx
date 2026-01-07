@@ -13,7 +13,12 @@ import taghazoutBeach from "@/assets/taghazout-beach.webp";
 import { MapPin, Palmtree, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "sonner";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+
+// Read EmailJS config from Vite env
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const BookingSection = () => {
   const { t } = useLanguage();
@@ -60,28 +65,27 @@ const BookingSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Validate environment variables
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-      if (!serviceId || !templateId || !publicKey ||
-        serviceId === 'your_service_id_here' ||
-        templateId === 'your_template_id_here' ||
-        publicKey === 'your_public_key_here') {
-        console.error("EmailJS Configuration Error: Missing or default environment variables.");
-        console.log("Service ID:", serviceId);
-        console.log("Template ID:", templateId);
-        console.log("Public Key:", publicKey ? "Present" : "Missing");
-        toast.error("Configuration Error", {
-          description: "EmailJS keys are missing or incorrect. Check console for details.",
-          duration: 5000,
+      if (
+        !SERVICE_ID ||
+        !TEMPLATE_ID ||
+        !PUBLIC_KEY ||
+        SERVICE_ID === "your_service_id_here" ||
+        TEMPLATE_ID === "your_template_id_here" ||
+        PUBLIC_KEY === "your_public_key_here"
+      ) {
+        toast.error("EmailJS is not configured. Please contact us via WhatsApp.", {
+          duration: 7000,
         });
         setIsSubmitting(false);
         return;
       }
 
-      // Prepare email template parameters
+      // Optionally, initialize EmailJS (safe to call multiple times)
+      try {
+        emailjs.init(PUBLIC_KEY);
+      } catch { }
+
+      // Prepare template params (adjust keys to match your EmailJS template)
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
@@ -90,47 +94,42 @@ const BookingSection = () => {
         package: formData.package,
         dates: formData.dates,
         message: formData.message || "No message provided",
-        to_email: "Julienmauro12@gmail.com",
+        to_email: "kamenzouy@outlook.com",
       };
 
-      console.log("Sending email with params:", templateParams);
-
-      // Send email using EmailJS
-      const response = await emailjs.send(
-        serviceId,
-        templateId,
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
         templateParams,
-        publicKey
+        PUBLIC_KEY
       );
 
-      console.log("EmailJS Success:", response);
-
-      // Show success toast
-      toast.success("Booking request sent successfully!", {
-        description: "We'll get back to you soon via email or phone.",
-        duration: 5000,
-      });
-
-      // Reset form
-      setFormData({
-        lessonType: "surf",
-        package: "",
-        name: "",
-        email: "",
-        phone: "",
-        dates: "",
-        message: "",
-        agreedToTerms: false,
-      });
-
-    } catch (error) {
-      console.error("Booking submission error:", error);
-      if (error && typeof error === 'object' && 'text' in error) {
-        console.error("EmailJS Error Details:", (error as any).text);
+      if (result.status === 200) {
+        toast.success("Booking request sent successfully!", {
+          description: "We'll get back to you soon via email or phone.",
+          duration: 5000,
+        });
+        setFormData({
+          lessonType: "surf",
+          package: "",
+          name: "",
+          email: "",
+          phone: "",
+          dates: "",
+          message: "",
+          agreedToTerms: false,
+        });
+      } else {
+        toast.error("Failed to send booking request", {
+          description: "Please try again or contact us via WhatsApp.",
+          duration: 7000,
+        });
       }
+    } catch (error) {
+      console.error("EmailJS error:", error);
       toast.error("Failed to send booking request", {
         description: "Please try again or contact us via WhatsApp.",
-        duration: 5000,
+        duration: 7000,
       });
     } finally {
       setIsSubmitting(false);

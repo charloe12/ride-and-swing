@@ -58,14 +58,14 @@ const translations = {
     'booking.package': 'SELECT PACKAGE',
 
     // Surf Packages
-    'booking.surfGroup': 'Group Class - 350 dhs/per person',
-    'booking.surfPrivate': 'Private Surf Class - 600 dhs/per person',
-    'booking.surfPicknik': 'Pick-nik/Surf Day - 1000 dhs/per person',
+    'booking.surfGroup': 'Group Class - 350 dhs/per person/2 hours',
+    'booking.surfPrivate': 'Private Surf Class - 600 dhs/per person/2 hours',
+    'booking.surfPicknik': 'Pick-nik/Surf Day - 1000 dhs/per person/4 hours',
 
     // Golf Packages
-    'booking.golfPractice': 'Practice - 500 dhs per person',
-    'booking.golfGuiding9': 'Course Guiding (9 holes) - 1400 dhs (all included)',
-    'booking.golfGuiding18': 'Course Guiding (18 holes) - 1800 dhs (all included)',
+    'booking.golfPractice': 'Practice - 500 dhs per person/1 hours',
+    'booking.golfGuiding9': 'Course Guiding (9 holes) - 1400 dhs (all included)/2 hours 30 mins',
+    'booking.golfGuiding18': 'Course Guiding (18 holes) - 1800 dhs (all included)/4 hours',
 
     // Combo Packages
     'booking.comboSurfPractice': '1 Surf Session + 1 Golf Practice - 800 dhs',
@@ -144,13 +144,13 @@ const translations = {
     'booking.package': 'SÉLECTIONNER LE FORFAIT',
 
     // Surf Packages
-    'booking.surfGroup': 'Cours en Groupe - 350 dhs/par personne',
-    'booking.surfPrivate': 'Cours Privé de Surf - 600 dhs/par personne',
-    'booking.surfPicknik': 'Journée Pick-nik/Surf - 1000 dhs/par personne',
+    'booking.surfGroup': 'Cours en Groupe - 350 dhs/par personne/2 heures',
+    'booking.surfPrivate': 'Cours Privé de Surf - 600 dhs/par personne/2 heures',
+    'booking.surfPicknik': 'Journée Pick-nik/Surf - 1000 dhs/par personne/4 heures',
 
     // Golf Packages
-    'booking.golfPractice': 'Practice - 500 dhs par personne',
-    'booking.golfGuiding9': 'Accompagnement (9 trous) - 1400 dhs (tout inclus)',
+    'booking.golfPractice': 'Practice - 500 dhs par personne/1 heure',
+    'booking.golfGuiding9': 'Accompagnement (9 trous) - 1400 dhs (tout inclus)/2 heures 30 mins',
     'booking.golfGuiding18': 'Accompagnement (18 trous) - 1800 dhs (tout inclus)',
 
     // Combo Packages
