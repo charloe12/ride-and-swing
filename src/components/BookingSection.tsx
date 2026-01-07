@@ -1,3 +1,12 @@
+// EmailJS integration: 
+// 1. Place your .env file in the project root (not in src).
+// 2. Add these lines to .env (replace with your real keys):
+//    VITE_EMAILJS_SERVICE_ID=your_service_id
+//    VITE_EMAILJS_TEMPLATE_ID=your_template_id
+//    VITE_EMAILJS_PUBLIC_KEY=your_public_key
+// 3. Restart your dev/build server after editing .env.
+// 4. Never commit your real .env to GitHub.
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,10 +24,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 
-// Read EmailJS config from Vite env
+// Read EmailJS config from Vite env (must be in project root .env)
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+// Only log in development
+if (import.meta.env.DEV) {
+  console.log("SERVICE_ID:", SERVICE_ID);
+  console.log("TEMPLATE_ID:", TEMPLATE_ID);
+  console.log("PUBLIC_KEY:", PUBLIC_KEY);
+}
 
 const BookingSection = () => {
   const { t } = useLanguage();
@@ -65,6 +81,7 @@ const BookingSection = () => {
     setIsSubmitting(true);
 
     try {
+      // Check EmailJS config
       if (
         !SERVICE_ID ||
         !TEMPLATE_ID ||
@@ -73,19 +90,20 @@ const BookingSection = () => {
         TEMPLATE_ID === "your_template_id_here" ||
         PUBLIC_KEY === "your_public_key_here"
       ) {
-        toast.error("EmailJS is not configured. Please contact us via WhatsApp.", {
-          duration: 7000,
-        });
+        toast.error(
+          "Booking form is not configured. Please contact us via WhatsApp or ask the site owner to set up EmailJS.",
+          { duration: 9000 }
+        );
         setIsSubmitting(false);
         return;
       }
 
-      // Optionally, initialize EmailJS (safe to call multiple times)
+      // Initialize EmailJS (safe to call multiple times)
       try {
         emailjs.init(PUBLIC_KEY);
       } catch { }
 
-      // Prepare template params (adjust keys to match your EmailJS template)
+      // Prepare template params (keys must match your EmailJS template)
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
